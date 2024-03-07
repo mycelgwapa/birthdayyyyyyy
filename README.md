@@ -1,1 +1,1 @@
-<span style="font-family: 'Roboto', sans-serif;">This is some text with a custom font!</span>
+<span style="@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap') font-family: 'Anta', sans serif;">This is some text with a custom font!</span>

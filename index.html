@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthdayyyyy!</title>
+  <style>
+    .body {
+      width: 0rem;
+      height: 30rem;
+      background-color: #000;
+      border-radius: 5px;
+      margin: auto;
+      padding: 10px;
+      display: none; /* Initially hide the div */
+    }
+
+    .show {
+      display: block; /* Show the div when the class is added */
+    }
+
+    /* Styles for centering the button */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .click {
+      /* Hide button on click using opacity */
+      opacity: 1;
+      transition: opacity 0.5s ease-in-out;
+      display: inline-block;
+      margin: 0 auto;
+    }
+
+    .click:hover {
+      opacity: 0.8; /* Add a hover effect for visual feedback */
+    }
+
+    .click.hidden {
+      opacity: 0; /* Hide button using a hidden class */
+    }
+  </style>
+</head>
+<body>
+  <div class="body"></div>
+  <button class="click" onclick="showDiv()">Click Me!</button>
+
+  <script>
+    function showDiv() {
+      var div = document.querySelector('.body');
+      div.classList.toggle('show');
+      
+      // Hide button using class toggle
+      document.querySelector('.click').classList.toggle('hidden');
+    }
+  </script>
+</body>
+</html>
