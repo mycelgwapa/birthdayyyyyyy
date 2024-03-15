@@ -1,16 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <style>
-
-    </style>
+  <title>Happy Birthdayyy</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .table{
+    top: 20%; /* Adjust this value to move it slightly towards the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    position: absolute;
+    width: 100rem;
+   background-color: #4b7a52;
+    }
+    .img{
+        position: absolute;
+        top: 50%;
+    }
+    .img-responsive{
+        display: block;
+        max-width: 100%;
+        height: auto;
+        }
+        .btn{
+            position: absolute;
+            right: 10%;
+        }
+  </style>
 </head>
 <body>
-    <div class="main">
-        <img src="./images/Untitled_design-removebg-preview.png" alt="">
+
+    <div class="btn">
+        <button onclick="redirect()">Memories</button>
     </div>
+
+<div class="imd" >
+    <img src="images/Untitled_design-removebg-preview.png" alt="Birthdayyy Gurll" class="img-responsive">
+</div>
+
+<div class="table mx-auto">
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Things To Do</th>
+            <th>Date</th>
+            <th>Agreed</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>None</td>
+            <td>None</td>
+            <td>None</td>
+        </tr>
+        <tr>
+            <td>None</td>
+            <td>None</td>
+            <td>None</td>
+        </tr>
+        <tr>
+            <td>None</td>
+            <td>None</td>
+            <td>None</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<script>
+    function redirect() {
+      setTimeout(function() {
+        window.location.href = 'Memories.html';
+      }, 1000);
+    }
+</script>
 </body>
 </html>
