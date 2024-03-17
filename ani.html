@@ -4,6 +4,7 @@
   <title>Happy Birthdayyy</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./output.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -14,27 +15,37 @@
     transform: translateX(-50%); /* Center horizontally */
     position: absolute;
     width: 100rem;
-   background-color: #4b7a52;
     }
     .img{
         position: absolute;
         top: 50%;
     }
     .img-responsive{
-        display: block;
         max-width: 100%;
         height: auto;
+        position: absolute;
+        width: 100rem;
+        left: -10%;
         }
         .btn{
             position: absolute;
             right: 10%;
+        }
+        .btn-2{
+            position: absolute;
+            right: 5%;
+            top: 1%;
         }
   </style>
 </head>
 <body>
 
     <div class="btn">
-        <button onclick="redirect()">Memories</button>
+        <button onclick="redirect1()">Memories</button>
+    </div>
+
+    <div class="btn-2">
+        <button onclick="redirect2()">Post</button>
     </div>
 
 <div class="imd" >
@@ -71,11 +82,12 @@
 </div>
 
 <script>
-    function redirect() {
-      setTimeout(function() {
-        window.location.href = 'Memories.html';
-      }, 1000);
-    }
+function redirect1() {
+  window.location.href = './frontend/Memories.html';
+}
+function redirect2() {
+    window.location.href = './frontend/Post.html'
+}
 </script>
 </body>
 </html>
